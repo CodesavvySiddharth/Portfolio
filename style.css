@@ -558,7 +558,8 @@ body {
 }
 
 .layer p {
-    color: #000;
+    color:#000;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -819,6 +820,15 @@ form textarea {
         transform: translateY(0px);
         opacity: 1;
     }
+}
+
+@media (max-width:1400px){
+
+    html{
+     font-size: 110%;
+    }
+
+
 }
 
 
