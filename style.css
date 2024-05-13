@@ -559,7 +559,7 @@ body {
 
 .layer p {
     color:#000;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -824,10 +824,7 @@ form textarea {
 
 @media (max-width:1400px){
 
-    html{
-     font-size: 110%;
-    }
-
+    
 
 }
 
