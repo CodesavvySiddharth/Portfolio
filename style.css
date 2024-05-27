@@ -222,6 +222,7 @@ body {
     /* Adjust width to fill the available space */
     padding: 75px 90px;
     display: flex;
+    flex-wrap: wrap;
     /* Set display to flex */
     justify-content: space-between;
     /* Align items to the start and end */
