@@ -88,6 +88,7 @@ body {
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
+    display: block;
 }
 
 .home-content h3:nth-of-type(2) {
@@ -366,8 +367,8 @@ body {
 
 .radial-bars {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    flex-wrap;
     justify-content: center;
 
 }
@@ -898,6 +899,23 @@ form textarea {
         margin: 1rem;
         background:rgba(108, 220, 228, 0.133);
     }
+
+    
+.Technical-bars {
+    flex: 0 0 90%;
+    /* Adjust width of the technical skills section */
+}
+
+.radial-bars {
+    flex: 0 0 85%;
+    /* Adjust width of the professional skills section */
+}
+
+.home-content h3{
+    display: none;
+}
+
+
 }
 
 @media (max-width:450px) {
