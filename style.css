@@ -173,14 +173,17 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin-top: -50px;
 }
 
 .about-img img {
     max-width: 680px;
-    height: auto;
+    height: 800px;
     width: 100%;
     border-radius: 8px;
+}
+.about-img {
+    
+    padding-bottom: 100px;
 }
 
 .about-text h2 {
