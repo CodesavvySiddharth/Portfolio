@@ -10,10 +10,6 @@ body {
     background: #081b29;
 }
 
-
-
-
-
 .header {
     position: relative;
     top: 0;
@@ -34,11 +30,19 @@ body {
 
 .navbar .logo {
     position: relative;
-    font-size: 30px;
+    font-size: 28px;
     color: #fff;
+    font-family: Georgia, serif;
     text-decoration: none;
-    font-weight: 700;
-    margin-right: 40%;
+    font-weight: 600;
+    margin-right: 50%;
+    margin-left: 10px;
+}
+.pro{
+    color: #0ef;
+    font-size: 30px;
+    font-family: Georgia, serif;
+    font-weight: 800;
 }
 
 .navbar a {
@@ -47,6 +51,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    font-family: Georgia, serif;
     margin-left: 35px;
     transition: .4s;
     opacity: 0;
@@ -104,6 +109,7 @@ body {
     font-weight: 600;
     margin: -3px 0;
     opacity: 0;
+    font-family: "Kalnia Glaze", serif;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -179,6 +185,7 @@ body {
 
 .about-text h2 {
     font-size: 60px;
+    font-family: "Kalnia Glaze", serif;
 }
 
 .about-text h2 span {
@@ -198,6 +205,7 @@ body {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 3.5rem;
+    margin-right: 8px;
 }
 
 
@@ -210,24 +218,28 @@ body {
     margin-top: 40px;
     font-size: 60px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 40px;
 }
 
 .sub-title span {
     color: #0ef;
+    font-family: "Kalnia Glaze", serif;
 }
 
 .container1 {
     width: 100%;
-    /* Adjust width to fill the available space */
     padding: 75px 90px;
     display: flex;
     flex-wrap: wrap;
-    /* Set display to flex */
     justify-content: space-between;
-    /* Align items to the start and end */
 }
+
+.container1 > div {
+    width: 50%; /* Each child div takes up 50% of the container's width */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
 
 .heading1 {
     text-align: center;
@@ -359,28 +371,16 @@ body {
 
 
 
-.Technical-bars {
-    flex: 0 0 52%;
-    /* Adjust width of the technical skills section */
-}
-
 
 .radial-bars {
     width: 100%;
-    display: block;
-    flex-wrap;
-    justify-content: center;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around /* Changed to space-around for better spacing */
 }
-
-.radial-bars {
-    flex: 0 0 33%;
-    /* Adjust width of the professional skills section */
-}
-
 
 .radial-bars .radial-bar {
-    width: 50%;
+    width: 50%; /* Adjusted width to fit two bars per row */
     height: 180px;
     margin-bottom: 15px;
     position: relative;
@@ -422,46 +422,42 @@ body {
 }
 
 .path-1 {
-    animation: animate-path1 1s 1s linear forwards
+    animation: animate-path1 1s 1s linear forwards;
 }
 
-.path.path-2 {
-    animation: animate-path2 1s 1s linear forwards
+.path-2 {
+    animation: animate-path2 1s 1s linear forwards;
 }
 
 .path-3 {
-    animation: animate-path3 1s 1s linear forwards
+    animation: animate-path3 1s 1s linear forwards;
 }
 
 .path-4 {
-    animation: animate-path4 1s 1s linear forwards
+    animation: animate-path4 1s 1s linear forwards;
 }
 
 @keyframes animate-path1 {
     100% {
         stroke-dashoffset: 60;
-        ;
     }
 }
 
 @keyframes animate-path2 {
     100% {
         stroke-dashoffset: 150;
-        ;
     }
 }
 
 @keyframes animate-path3 {
     100% {
         stroke-dashoffset: 125;
-        ;
     }
 }
 
 @keyframes animate-path4 {
     100% {
         stroke-dashoffset: 30;
-        ;
     }
 }
 
@@ -482,12 +478,9 @@ body {
     text-align: center;
     left: 50%;
     bottom: -5px;
-    transform: translateX(-50px);
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
+    transform: translateX(-50%);
 }
+
 
 
 .main-text {
@@ -530,6 +523,7 @@ body {
     height: 100%;
 }
 
+
 .layer {
     width: 100%;
     height: 0;
@@ -561,7 +555,7 @@ body {
 
 .layer p {
     color:#000;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -593,36 +587,40 @@ body {
     align-items: center;
     gap: 3rem;
     padding-left: 30px;
-    margin-top: 130px;
+    margin-top: 60px;
     padding-bottom: 40px;
+    margin-left: 1rem;
 }
 
 .contact-text h2 {
-    font-size: 90px;
+    font-size: 70px;
     line-height: 1;
-    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Kalnia Glaze", serif;
 }
 
 .contact-text h2 span {
     color: #0ef;
 }
 
-.contact-text h4 {
-    margin: 15px 0;
+.contact-text h4{
+    margin: 10px 0;
     color: rgb(228, 228, 228);
     font-size: 20px;
     font-weight: 600;
 }
-
-.contact-text p {
-    color: rgb(177, 177, 177);
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 2rem;
+.contact-text h5{
+    margin: 5px 0;
+    color: rgb(228, 228, 228);
+    font-size: 15px;
+    font-weight: 600;
 }
 
+
+
 .contact-list {
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .contact-list li {
@@ -656,7 +654,7 @@ body {
     font-size: 20px;
     color: #0ef;
     text-decoration: none;
-    margin: 30px 15px 30px 0;
+    margin: 10px 15px 30px 0;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -670,66 +668,12 @@ body {
 
 }
 
-.contact-form form {
-    position: relative;
-}
 
-form .in {
-    border: none;
-    outline: none;
-    width: 90%;
-    padding: 18px;
-    background: #555557;
-    color: #000;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-form textarea {
-    border: none;
-    outline: none;
-    width: 90%;
-    padding: 18px;
-    background: #555557;
-    color: #000;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-}
-
-.contact-form textarea {
-    resize: none;
-    height: 220px;
-}
-
-.send {
-    display: inline-block;
-    padding: 14px 60px;
-    background: #0ef;
-    border-radius: 40px;
-    font-size: 18px;
-    color: #081629;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-    animation-delay: 1s;
-    box-shadow: 0 0 5px #0ef,
-        0 0 25px #0ef;
-}
-
-.send:hover {
-    box-shadow: 0 0 5px cyan,
-        0 0 25px cyan, 0 0 50px cyan,
-        0 0 100px cyan, 00 200px cyan;
-}
 
 .last-text {
-    padding-bottom: 5px;
+    margin-top: 3rem;
+    margin-left: 4px;
+    padding-bottom: 15px;
     font-size: 20px;
 }
 

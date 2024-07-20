@@ -18,13 +18,12 @@
 
             <i class='bx bx-menu-alt-left' id="menu-bar"></i>
 
-            <span class="logo"> Portfolio</span>
+            <span class="logo"> <span class="pro">P</span>ortfolio</span>
 
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#myskills" style="--i:3">Skills</a>
+            <a href="#project" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
 
         </nav>
     </header>
@@ -82,7 +81,7 @@
 
     <!------------My Skills------------>
 
-    <h1 class="sub-title">My <span>Skills</span></h1>
+    <h1 class="sub-title" id="myskills">My <span>Skills</span></h1>
     <section>
 
 
@@ -141,45 +140,63 @@
 
 
 
-            <div class="radial-bars">
+            <div class="radial-bars1">
 
                 <h1 class="heading1"> Professional Skills</h1>
 
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" id="p1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Creativity</div>
+                <div class="radial-bars">
+
+
+                    <div>
+
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox=" 0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-1" id="p1" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">90%</div>
+                            <div class="text">Creativity</div>
+                        </div>
+        
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox=" 0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">70%</div>
+                            <div class="text">Communication</div>
+                        </div>
+    
+                    </div>
+                    
+    
+                    <div>
+    
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox=" 0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">75%</div>
+                            <div class="text">Problem Solving</div>
+                        </div>
+        
+                        <div class="radial-bar">
+                            <svg x="0px" y="0px" viewBox=" 0 0 200 200">
+                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                            </svg>
+                            <div class="percentage">95%</div>
+                            <div class="text">Teamwork</div>
+                        </div>
+    
+                    </div>
+
+
                 </div>
 
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">70%</div>
-                    <div class="text">Communication</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">75%</div>
-                    <div class="text">Problem Solving</div>
-                </div>
-
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">95%</div>
-                    <div class="text">Teamwork</div>
-                </div>
+                
+                
 
             </div>
 
@@ -246,15 +263,19 @@
 
     <section class="contact" id="contact">
         <div class="contact-text">
-            <h2>Contact<span>Me</span></h2>
+
+            <h2>Contact<span> Me</span></h2>
             <h4>Let's Work Together</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestias ratione asperiores esse
-                quaerat corrupti officia quae cum laborum quas.</p>
+            <h5>To Make A Change...</h5>
+
 
             <div class="contact-list">
                 <li><i class="bx bxs-send"></i>siddharthkesharwani2507@gmail.com</li>
                 <li><i class="bx bxs-phone"></i>8604204828</li>
             </div>
+
+
+
 
             <div class="contact-icons">
                 <a href="https://www.facebook.com/codesavvysiddharth?mibextid=ZbWKwL"><i
@@ -267,15 +288,8 @@
 
         </div>
 
-        <div class="Contact-form">
-            <form action="">
-                <input class="in" type="" placeholder="Enter Your Name" required>
-                <input class="in" type="email" placeholder="Enter Your Email" required>
-
-                <input class="in" type="" placeholder="Enter Your Subject">
-                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your message"></textarea>
-                <input type="submit" value="submit" class="send">
-            </form>
+        <div>
+            <img src="images/contact-img.png" alt="">
         </div>
 
     </section>
