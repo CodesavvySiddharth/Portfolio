@@ -1060,7 +1060,7 @@ body {
         color:#000;
         font-weight: 600;
         font-size: 100%;
-        line-height: 1.8;
+        line-height: 1.5;
     }
     
     .layer i {
@@ -1195,6 +1195,36 @@ body {
     }
     .last-text p{
         font-size: 90%;
+    }
+    .layer h5 {
+        color: #fff;
+        font-size: 80%;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    .layer h5 span {
+        color: #0ef;
+    }
+    
+    .layer p {
+        color:#000;
+        font-weight: 500;
+        font-size: 80%;
+        line-height: 1.2;
+    }
+    
+    .layer i {
+        color: #ff004f;
+        margin-top: 20px;
+        font-size: 80%;
+        background: #fff;
+        width: 110%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
     }
 
 }
