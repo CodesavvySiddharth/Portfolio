@@ -1158,19 +1158,43 @@ body {
 
 
 
-@media (max-width:575px) {
-
-   
-    .navbar a{
+@media (max-width: 575px) {
+    .navbar a {
         display: none;
     }
-    .navbar span{
-        margin-left: 36%
+    .navbar span {
+        margin-left: 36%;
     }
-    *{
-        font-size: 70%;
+    .home-content {
+        max-width: 250px;
     }
-
+    .home {
+        padding: 0px 10%;
+        
+    }
+    .home-content p {
+        font-size: 15px;
+    }
+    .home-content h1, .home-content h3,.about-text h4,
+    .heading1{
+        font-size: 130%; /* Decrease heading size by 10% */
+    }
+    .home-content p,.about-text p,#toggle-btn{
+        font-size: 90%;
+    }
+    .home-social a{
+        height: 30px;
+        width: 30px;
+    }
+    .about-text h2,.sub-title,.main-text h2,    .contact-text h2{
+        font-size: 200%;
+    }
+    .about-img img {
+        height: 500px;
+    }
+    .last-text p{
+        font-size: 90%;
+    }
 
 }
 
