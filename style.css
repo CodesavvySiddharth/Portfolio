@@ -1170,6 +1170,7 @@ body {
     }
     .home {
         padding: 0px 10%;
+        height: 90vh;
         
     }
     .home-content p {
