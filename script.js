@@ -6,16 +6,18 @@ var typed = new Typed(".text",{
     loop:true
 })
 
-// Get a reference to the navbar element
-const navbar = document.querySelector('header .navbar');
 
-// Function to toggle the active class on the navbar
-function toggleNavbar() {
-    navbar.classList.toggle('active');
-}
 
-// Get a reference to the menu bar element (assuming it has an ID of "menu-bar")
-const menuBar = document.getElementById('menu-bar');
-
-// Add a click event listener to the menu bar
-menuBar.addEventListener('click', toggleNavbar);
+document.getElementById('toggle-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+    const para = document.getElementById('about-para');
+    if (para.classList.contains('collapsed')) {
+        para.classList.remove('collapsed');
+        para.classList.add('expanded');
+        this.textContent = '↑'; // Change to upward arrow
+    } else {
+        para.classList.remove('expanded');
+        para.classList.add('collapsed');
+        this.textContent = 'Know More'; // Change back to downward arrow
+    }
+});
