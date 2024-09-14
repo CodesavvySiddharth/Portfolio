@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail-Me</title>
+     
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Ptirjeddr_GaW0DSq",
+            });
+        })();
+    </script>
+</head>
+<body>
+    
+    <form class="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="47f42517-6b91-47eb-abb6-a3ac1da10508">
+    
+        <div class="form-group">
+            <label for="name" class="label">Name</label>
+            <input type="text" id="name" name="name" placeholder="John" class="input" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="email" class="label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Doe@abc.xyc" class="input" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="message" class="label">Message</label>
+            <textarea id="message" name="message" rows="4" onfocus="clearField(this)" onblur="restoreField(this)"
+                class="textarea" placeholder="Your Message..."></textarea>
+        </div>
+    
+        <input type="hidden" name="from_name" value="You received a Message!">
+        <input type="hidden" name="redirect" value="https://portfolio-codesavvysiddharth.vercel.app/success.html">
+        <input type="checkbox" name="botcheck" class="hidden">
+    
+        <button onclick="sendMail()" class="submit-button">Submit</button>
+    
+        <div class="form-actions">
+            <a href="./index.html" class="cancel-button">Cancel</a>
+        </div>
+    </form>
+    
+</body>
+</html>

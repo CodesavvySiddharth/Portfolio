@@ -498,8 +498,8 @@ body {
 
 
 .main-text {
-    padding-top: 100px;
-    margin-top: 150px;
+    padding-top: 50px;
+    /* margin-top: 150px; */
 }
 
 .main-text h2 {
@@ -690,6 +690,9 @@ body {
     padding-bottom: 15px;
     font-size: 18px;
 }
+
+
+
 
 
 
