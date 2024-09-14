@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mail-Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/contact-img.png" type="image/x-icon">
      
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -33,17 +35,16 @@
         <div class="form-group">
             <label for="message" class="label">Message</label>
             <textarea id="message" name="message" rows="4" onfocus="clearField(this)" onblur="restoreField(this)"
-                class="textarea" required>Your Message...</textarea>
+                class="textarea" placeholder="Your Message..."></textarea>
         </div>
     
         <input type="hidden" name="from_name" value="You received a Message!">
         <input type="hidden" name="redirect" value="https://portfolio-codesavvysiddharth.vercel.app/success.html">
-        <input type="checkbox" name="botcheck" class="hidden">
     
         <button onclick="sendMail()" class="submit-button">Submit</button>
     
         <div class="form-actions">
-            <a href="./index.html" class="cancel-button">Cancel</a>
+            <a href="./index.html#contact" class="cancel-button">Cancel</a>
         </div>
     </form>
     

@@ -1,0 +1,41 @@
+/* General Body Styles */
+body {
+    background: #081b29fc;
+    max-width: 1536px; /* Equivalent to Tailwind max-w-screen-2xl */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Section Styling */
+.success-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Text Styles */
+.message-text {
+    color: #D1D5DB; /* Equivalent to Tailwind text-neutral-300 */
+    font-size: 1.125rem; /* Equivalent to Tailwind text-lg */
+    margin: 20px 0; /* Equivalent to Tailwind my-5 */
+}
+
+.redirect-text {
+    color: #9CA3AF; /* Equivalent to Tailwind text-neutral-400 */
+    font-size: 1rem; /* Equivalent to Tailwind text-base */
+    margin: 6px 0; /* Equivalent to Tailwind my-1.5 */
+}
+
+/* Counter Styles */
+.counter {
+    color:aqua; /* Equivalent to Tailwind text-orange-500 */
+    font-size: 5rem; /* Equivalent to Tailwind text-8xl */
+    margin: 10px 0; /* Equivalent to Tailwind my-2.5 */
+}
