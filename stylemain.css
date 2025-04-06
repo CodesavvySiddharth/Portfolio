@@ -1521,7 +1521,7 @@ body {
 
 .contact-list li a {
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -2683,6 +2683,38 @@ body {
 .contact-list a:hover {
     color: #0ef;
     text-decoration: underline;
+}
+
+/* Contact Link Styles */
+.contact-list a, 
+.info-card p a {
+    color: #ededed;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.contact-list a:hover, 
+.info-card p a:hover {
+    color: #0ef;
+    transform: translateY(-2px);
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-list i {
+    color: #0ef;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-list a:hover + i,
+.contact-list i:hover {
+    transform: scale(1.1);
 }
 
 
