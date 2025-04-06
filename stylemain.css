@@ -1521,7 +1521,7 @@ body {
 
 .contact-list li a {
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -1988,6 +1988,12 @@ body {
     .contact-text h2 {
         font-size: 2rem;
     }
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 3rem 0rem;
+        position: relative;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1997,6 +2003,9 @@ body {
 
     .home-content h1 {
         font-size: 1.75rem;
+    }
+    .home-image{
+        display: none;
     }
 
     .home-content h3 {
@@ -2024,6 +2033,23 @@ body {
 
     .contact-text h2 {
         font-size: 1.75rem;
+    }
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 3rem .5rem;
+        position: relative;
+        overflow: hidden;
+    }
+   
+.contact-list li a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+    .contact-list li {
+        padding:5px;
+        font-size: 14px;
     }
 }
 
