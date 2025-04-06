@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Codesavvy Siddharth</title>
+    <meta name="description" content="Professional portfolio of Codesavvy Siddharth - Web Developer and Designer">
     <link rel="stylesheet" href="stylemain.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/A_self-portrait_of_the_user_for_a_website_with_only_the_person_they_want_1-removebg-preview.png" type="image/x-icon" />
@@ -18,42 +19,60 @@
     <!----------Header----------->
     <header>
         <nav class="navbar">
-
-            <i class='bx bx-menu-alt-left' id="menu-bar"></i>
-
-            <span class="logo"> <span class="pro">P</span>ortfolio</span>
-
-            <a href="#about" style="--i:2">About</a>
-            <a href="#myskills" style="--i:3">Skills</a>
-            <a href="#project" style="--i:4">Projects</a>
-            <a href="#contact" style="--i:5">Contact</a>
-
+            <div class="logo">
+                <span class="pro">P</span>ortfolio
+            </div>
+            <div class="nav-links">
+                <a href="#home" style="--i:1">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                <a href="#myskills" style="--i:3">Skills</a>
+                <a href="#project" style="--i:4">Projects</a>
+                <a href="#contact" style="--i:5">Contact</a>
+            </div>
+            <div class="menu-icon">
+                <i class='bx bx-menu' id="menu-bar"></i>
+            </div>
         </nav>
     </header>
 
     <!----------Home Section----------->
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Codesavvy Siddharth</h1>
-            <h3 class="active">And I'm a <span class="text"></span></h3>
-            <p>I'm a Web Designer with extensive experience for 2 years.
-                <br>expertise is to create and website design, frontend design, and more....
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I'm a passionate Web Developer with extensive experience in creating beautiful and functional websites.
+                <br>My expertise includes frontend development, UI/UX design, and responsive web applications.
             </p>
 
             <div class="home-social">
-                <a href="https://www.facebook.com/codesavvysiddharth?mibextid=ZbWKwL" style="--i:6"><i
-                        class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/codesavvysiddharth" style="--i:7"><i
-                        class="bx bxl-instagram"></i></a>
-                <a href="https://www.threads.net/@codesavvysiddharth" style="--i:8"><i class='bx bxl-twitter'></i></a>
-                <a href="https://github.com/CodesavvySiddharth" style="--i:9"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/siddharth-kesharwani-790443257" style="--i:10"><i
-                        class='bx bxl-linkedin'></i></a>
-
+                <a href="https://www.facebook.com/codesavvysiddharth" target="_blank" rel="noopener" style="--i:6">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/codesavvysiddharth" target="_blank" rel="noopener" style="--i:7">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://www.threads.net/@codesavvysiddharth" target="_blank" rel="noopener" style="--i:8">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://github.com/CodesavvySiddharth" target="_blank" rel="noopener" style="--i:9">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/siddharth-kesharwani-790443257" target="_blank" rel="noopener" style="--i:10">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
             </div>
             <a href="#about" class="btn-box">More About Me</a>
+        </div>
+        <div class="home-image">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="images/WhatsApp Image 2025-04-06 at 14.33.01_8d6c9729.jpg" alt="Profile Picture">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -63,248 +82,278 @@
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/A_self-portrait_of_the_user_for_a_website_with_only_the_person_they_want_1-removebg-preview.png" alt="">
+            <div class="img-box">
+                <img src="images/WhatsApp Image 2025-04-06 at 14.33.01_8d6c9729.jpg" alt="Siddharth's Profile Picture">
+                <span class="circle-spin"></span>
+            </div>
         </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Full Stack Developer </h4>
-            <p id="about-para" class="collapsed">
-                As a web developer with one year of experience, I have delved deep into the dynamic world of web
-                development, honing my skills and expertise along the way. Throughout my journey, I've embarked on
-                numerous projects, each presenting its own set of challenges and opportunities for growth. Whether
-                working independently or in collaborative environments, I've demonstrated versatility and adaptability,
-                consistently striving for excellence in every endeavor. Embracing teamwork, I've found immense value in
-                collaborating with fellow developers, designers, and stakeholders, leveraging collective strengths to
-                bring innovative ideas to life.I am dedicated to pushing the boundaries of what's possible in the
-                ever-evolving landscape of web development.
-            </p>
-            <a href="#" id="toggle-btn" class="btn-box">Know More</a>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Full Stack Developer</h3>
+            <div class="about-text">
+                <p id="about-para" class="collapsed">
+                    As a passionate Full Stack Developer, I thrive on turning innovative ideas into elegant solutions. With extensive experience in web development, I've successfully delivered numerous projects that combine cutting-edge technology with exceptional user experiences.
+                </p>
+                <p class="experience-text">
+                    <span class="highlight">Technical Expertise:</span> Proficient in modern web technologies including React, Node.js, and cloud platforms.
+                    <br>
+                    <span class="highlight">Project Success:</span> Delivered 15+ successful projects with focus on scalability and performance.
+                    <br>
+                    <span class="highlight">Innovation:</span> Constantly learning and implementing latest industry trends and best practices.
+                </p>
+         
+            </div>
         </div>
     </section>
 
     <!------------My Skills------------>
 
-    <h1 class="sub-title" id="myskills">My <span>Skills</span></h1>
-    <section>
-
-
-        <div class="container1" id="Skills">
-
-
+    <section class="section" id="myskills">
+        <h2 class="sub-title">My <span>Skills</span></h2>
+        <div class="container1">
             <div class="Technical-bars">
-
-
-                <h1 class="heading1">Technical Skills</h1>
-
-                <div class="bar"><i style="color:#c95d2e" class='bx bxl-html5'></i>
+                <h3 class="heading1">Technical Skills</h3>
+                <div class="bar" style="--i:1">
                     <div class="info">
-                        <span>HTML</span>
+                        <div class="skill-name">
+                            <i class='bx bxl-html5' style="color: #e34c26;"></i>
+                            <span>HTML</span>
+                        </div>
+                        <span class="percentage">90%</span>
                     </div>
-                    <div class="progress-line html" id="PL1">
-                        <span></span>
+                    <div class="progress-line">
+                        <span style="--progress:90%"></span>
                     </div>
                 </div>
-                <div class="bar"><i style="color:#147bbc" class='bx bxl-css3'></i>
+                <div class="bar" style="--i:2">
                     <div class="info">
-                        <span>CSS</span>
+                        <div class="skill-name">
+                            <i class='bx bxl-css3' style="color: #264de4;"></i>
+                            <span>CSS</span>
+                        </div>
+                        <span class="percentage">85%</span>
                     </div>
-                    <div class="progress-line" id="PL2">
-                        <span></span>
+                    <div class="progress-line">
+                        <span style="--progress:85%"></span>
                     </div>
                 </div>
-                <div class="bar"><i style="color:#b0bc1e" class='bx bxl-javascript'></i>
+                <div class="bar" style="--i:3">
                     <div class="info">
-                        <span>Javascript</span>
+                        <div class="skill-name">
+                            <i class='bx bxl-javascript' style="color: #f0db4f;"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <span class="percentage">80%</span>
                     </div>
-                    <div class="progress-line" id="PL3">
-                        <span></span>
+                    <div class="progress-line">
+                        <span style="--progress:80%"></span>
                     </div>
                 </div>
-                <div class="bar"><i style="color: #34b526" class='bx bxl-c-plus-plus'></i>
+                <div class="bar" style="--i:4">
                     <div class="info">
-                        <span>C++</span>
+                        <div class="skill-name">
+                            <i class='bx bxl-react' style="color: #61dafb;"></i>
+                            <span>React</span>
+                        </div>
+                        <span class="percentage">75%</span>
                     </div>
-                    <div class="progress-line" id="PL4">
-                        <span></span>
+                    <div class="progress-line">
+                        <span style="--progress:75%"></span>
                     </div>
                 </div>
-                <div class="bar"><i style="color:#69bcbc" class='bx bxl-react'></i>
+                <div class="bar" style="--i:5">
                     <div class="info">
-                        <span>React</span>
+                        <div class="skill-name">
+                            <i class='bx bxl-nodejs' style="color: #68a063;"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <span class="percentage">70%</span>
                     </div>
-                    <div class="progress-line" id="PL5">
-                        <span></span>
+                    <div class="progress-line">
+                        <span style="--progress:70%"></span>
                     </div>
                 </div>
-
             </div>
 
-
-
-
-
-            <div class="radial-bars1">
-
-                <h1 class="heading1"> Professional Skills</h1>
-
-                <div class="radial-bars">
-
-
-                    <div>
-
-                        <div class="radial-bar">
-                            <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                <circle class="path path-1" id="p1" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">90%</div>
-                            <div class="text">Creativity</div>
-                        </div>
-        
-                        <div class="radial-bar">
-                            <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">70%</div>
-                            <div class="text">Communication</div>
-                        </div>
-    
-                    </div>
-                    
-    
-                    <div>
-    
-                        <div class="radial-bar">
-                            <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">75%</div>
-                            <div class="text">Problem Solving</div>
-                        </div>
-        
-                        <div class="radial-bar">
-                            <svg x="0px" y="0px" viewBox=" 0 0 200 200">
-                                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                            </svg>
-                            <div class="percentage">95%</div>
-                            <div class="text">Teamwork</div>
-                        </div>
-    
+            <div class="radial-bars">
+                <h3 class="heading1">Professional Skills</h3>
+                <div class="radial-bars-container">
+                    <div class="radial-bar" style="--i:1">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path" cx="100" cy="100" r="80" style="--progress:90"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
                     </div>
 
+                    <div class="radial-bar" style="--i:2">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path" cx="100" cy="100" r="80" style="--progress:85"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">Problem_Solving</div>
+                    </div>
 
+                    <div class="radial-bar" style="--i:3">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path" cx="100" cy="100" r="80" style="--progress:80"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Communication</div>
+                    </div>
+
+                    <div class="radial-bar" style="--i:4">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path" cx="100" cy="100" r="80" style="--progress:95"></circle>
+                        </svg>
+                        <div class="percentage">95%</div>
+                        <div class="text">Teamwork</div>
+                    </div>
                 </div>
-
-                
-                
-
             </div>
-
         </div>
-
     </section>
 
 
-    <section>
-        <div id="portfolio">
-            <div class="main-text" id="project">
-                <h2 class="sub-title">Latest <span>Projects</span></h2>
-                <div class="portfolio-content">
-
-                    <div class="row">
-                        <img src="images/UI-UX-scaled.jpg" alt="">
-                        <div class="layer">
-                            <h5><span>UI/UX</span> Designs</h5>
-                            <p>Craft a user-friendly UI/UX with clear navigation, consistent design, mobile
-                                responsiveness, fast loading times, and accessibility. Showcase projects with
-                                high-quality images and descriptions. Include contact information and client
-                                testimonials for credibility.</p>
-
-                            <a href="https://github.com/CodesavvySiddharth/UI-UX"><i class='bx bx-link-external'
-                                    style="color:rgb(0, 0, 0);"></i></a>
+    <section class="projects-section" id="project">
+        <h2 class="sub-title">Latest <span>Projects</span></h2>
+        <div class="portfolio-content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/UI-UX-scaled.jpg" alt="UI/UX Design Project">
+                </div>
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3 class="project-title">UI/UX <span>Designs</span></h3>
+                        <p class="project-description">
+                            Craft a user-friendly UI/UX with clear navigation, consistent design, mobile
+                            responsiveness, fast loading times, and accessibility. Showcase projects with
+                            high-quality images and descriptions.
+                        </p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Sketch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/CodesavvySiddharth/UI-UX" class="project-link" target="_blank">
+                                <i class='bx bx-link-external'></i>
+                                <span>View Project</span>
+                            </a>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="row">
-                        <img src="images/web-developments.jpg" alt="">
-                        <div class="layer">
-                            <h5><span>Web</span>sites</h5>
-                            <p>
-                                I've developed responsive websites with intuitive navigation, fast loading times, and
-                                accessibility features. Employing consistent design principles, I showcase projects with
-                                high-quality images and detailed descriptions. Client testimonials and contact
-                                information enhance credibility.</p>
-
-                            <a href="https://github.com/CodesavvySiddharth?tab=repositories"><i
-                                    class='bx bx-link-external' style="color:#000;"></i></a>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/web-developments.jpg" alt="Web Development Projects">
+                </div>
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3 class="project-title">Web <span>Development</span></h3>
+                        <p class="project-description">
+                            Developed responsive websites with intuitive navigation, fast loading times, and
+                            accessibility features. Employing consistent design principles and modern technologies.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/CodesavvySiddharth?tab=repositories" class="project-link" target="_blank">
+                                <i class='bx bx-link-external'></i>
+                                <span>View Projects</span>
+                            </a>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="row">
-                        <img src="images/service-1.jpg" class="i3" alt="">
-                        <div class="layer">
-                            <h5> <span>Un</span>dergo</h5>
-                            <p>
-                                Projects undergo rigorous development cycles, ensuring responsive design, fast loading
-                                times, and accessibility. Each is meticulously crafted with consistent design principles
-                                and detailed documentation for seamless user experience.</p>
-
-                            <a href="https://github.com/CodesavvySiddharth/Fitness_era"><i class='bx bx-link-external' style="color:#000;"></i></a>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/service-1.jpg" class="i3" alt="Fitness Project">
+                </div>
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3 class="project-title">Fitness <span>Era</span></h3>
+                        <p class="project-description">
+                            A comprehensive fitness platform with workout tracking, nutrition planning, and progress monitoring.
+                            Built with modern web technologies and responsive design.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/CodesavvySiddharth/Fitness_era" class="project-link" target="_blank">
+                                <i class='bx bx-link-external'></i>
+                                <span>View Project</span>
+                            </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
     </section>
 
 
 
     <section class="contact" id="contact">
         <div class="contact-text">
-
             <h2>Contact<span> Me</span></h2>
             <h4>Let's Work Together</h4>
             <h5>To Make A Change...</h5>
 
-
             <div class="contact-list">
-                <li><i class="bx bxs-send" onclick="window.location.href='mailto:siddharthkesharwani2507@gmail.com';"></i><a href="contact.html">siddharthkesharwani2507@gmail.com</a></li>
+                <li><i class="bx bxs-send" onclick="window.location.href='mailto:siddharthkesharwani2507@gmail.com';"></i><a href="contact.html" target="_blank" >siddharthkesharwani2507@gmail.com</a></li>
                 <li><i class="bx bxs-phone"></i>8604204828</li>
             </div>
 
-
-
-
             <div class="contact-icons">
-                <a href="https://www.facebook.com/codesavvysiddharth?mibextid=ZbWKwL"><i
-                        class="bx bxl-facebook-circle"></i></a>
-                <a href="https://www.threads.net/@codesavvysiddharth"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.instagram.com/codesavvysiddharth"><i class="bx bxl-instagram"></i></a>
-                <a href="https://github.com/CodesavvySiddharth"><i class='bx bxl-github'></i></a>
-
+                <a href="https://www.facebook.com/codesavvysiddharth" target="_blank" rel="noopener">
+                    <i class="bx bxl-facebook-circle"></i>
+                </a>
+                <a href="https://www.threads.net/@codesavvysiddharth" target="_blank" rel="noopener">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/codesavvysiddharth" target="_blank" rel="noopener">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="https://github.com/CodesavvySiddharth" target="_blank" rel="noopener">
+                    <i class='bx bxl-github'></i>
+                </a>
             </div>
-
         </div>
 
-        <div>
-            <img src="images/contact-img.png" alt="">
+        <div class="contact-img">
+            <img src="images/contact-img.png" alt="Contact Image">
         </div>
-
     </section>
 
-    <div class="last-text">
-        <p>
-            Developed by CodesavvySiddharth @ 2024
-        </p>
-        <p>
-            All Rights Are Reserved to CodesavvySiddharth.
-        </p>
-    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+        
+            <div class="footer-bottom">
+                <p class="copyright">
+                    Developed with <i class='bx bxs-heart'></i> by <span>CodesavvySiddharth</span> © 2024
+                </p>
+                <p class="rights">
+                    All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 
     <script src="script.js"></script>
 
